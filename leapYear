@@ -1,0 +1,11 @@
+#Get input from year
+year = int(input("From what year do you want to check:?"))
+inRange = int(input("How many years do you want to check:?"))
+#Create range to check
+for i in range(0,inRange):
+    nexYear = year + i
+    #check if year is a leapyear
+    if nexYear%4==0:       
+        print(str(nexYear) + " is a leap year")
+    else:
+        print(str(nexYear) + " isn't a leap year")
