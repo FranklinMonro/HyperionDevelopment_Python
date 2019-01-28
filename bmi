@@ -1,0 +1,19 @@
+
+# Ask the user to enter their weight in kg and their height in m
+weight = float(input("What is your weight in kg?:"))
+height = float(input("What is your height in m?:"))
+# Use the formula below to calculate the user's BMI:
+# BMI = (weight in kg) / ((height in m)*(height in m))
+bmi = (weight / (height * height))
+# If the users BMI is 30 or greater the user is obese
+if bmi > 30 :
+    print("You are obese")
+# else if the users BMI is 25 or greater the user is overweight
+elif bmi > 25:
+    print("You are overweight")
+# else if the users BMI is 18.5 or greater the user is normal
+elif bmi > 18.5:
+    print("You are normal")
+# If the users BMI is  less than 18.5 the user is underweight
+else:
+    print("You are underweight")
