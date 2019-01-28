@@ -1,0 +1,15 @@
+#Exercise 1
+#Create a var hero = "Super Man"
+hero = "Super Man"
+#Print var as S^U^P^E^R M^A^N
+print(hero.upper().replace("","^"))
+
+#Exercise 2
+#Create a varaible string “The!quick!brown!fox!jumps!over!the!lazy!dog!”
+sentence = "The!quick!brown!fox!jumps!over!the!lazy!dog!"
+#Print var replacing ! with spacing
+print(sentence.replace("!", " "))
+#Print var out just in uppercase
+print(sentence.replace("!", " ").upper())
+#Print var in reverse
+print(sentence.replace("!", " ").upper()[::-1])
