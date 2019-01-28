@@ -1,0 +1,14 @@
+# Write a program that always asks the user to enter a number.
+num = 0
+sum1 =0
+count = 0
+
+
+while num !=-1:
+          num = int(input("Insert a number(-1 exit question):"))# When the user enters the negative number -1, the program should stop requesting the user to enter a number,
+          sum1 += num 
+          count = count + 1
+sum2 = sum1 + 1#plus the 1 of the -1 of exit
+ave = count - 1#minus 1 from the count for the average
+print(num)
+print(sum2 / ave)# The program must then calculate the average of the numbers entered excluding the -1.
