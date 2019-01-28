@@ -1,0 +1,6 @@
+#Get users address
+address = input("What is your address?:")
+#Get users name
+name = input("What is your name?:")
+#Print out "The address for" + users name + "is" + address
+print("The address for " + name + " is " + address)
