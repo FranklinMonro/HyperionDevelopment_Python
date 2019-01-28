@@ -1,0 +1,12 @@
+
+# Ask the user to enter a number less than 100.
+num = int(input("Please insert a number less than 100: "))
+# If they enter one above 100, ask them to try again (and continue to do so until they follow instructions).
+while num > 100:
+          num = int(input("Please insert a number less than 100: "))
+if num%2 == 0:
+# Once they have entered a valid number, check if it is even and if it is then multiply it by 2 and print it out.   
+   print(num *2)
+# If it isn't, then multiply it by 3 and print it out.
+else:
+   print(num*3)
