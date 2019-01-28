@@ -1,0 +1,8 @@
+#Ask users favourite restaurant and store in var "favRest"
+favRest = input("What is your favourite restaurant?:")
+#Ask users favourite number use casting to store it in var "intFav"
+number = input("What is your favourite number:?")
+intFav = int(number)
+#Print out both in separately
+print(favRest)
+print(str(intFav))
