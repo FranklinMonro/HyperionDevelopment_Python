@@ -1,0 +1,10 @@
+#Input users name and store in variable "name"
+name = input("What is your name?:")
+#Input users age and store in variable "age"
+age = int(input("What is your age?:"))
+#Input users house number and store in variable "house_number"
+house_number = int(input("What is your house number?:"))
+#Input users street name and store in variable "street_name"
+street_name = input("What is your street name?:")
+#Print then as example This is John Smith he is 28 years old and lives at house number 42 on Hamilton street
+print("This is " + name + " he is " + str(age) + " years old and lives at house number " + str(house_number) + " on " + street_name)
