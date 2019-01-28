@@ -1,0 +1,17 @@
+# Ask the user to enter three different integers
+num1 = int(input("What is your first number?:"))
+num2 = int(input("What is your second number?:"))
+num3 = int(input("What is your third number?:"))
+# Then print out:
+# - The sum of all the numbers
+sum = num1 + num2 + num3
+print(sum)
+# - The first number minus the second number
+sub = num1 - num2
+print(sub)
+# - The third number multiplied by the first number
+mult = num1 * num3
+print(mult)
+# - The sum of all three numbers divided by the third number
+div = (num1 + num2 + num3) / num3
+print(div)
