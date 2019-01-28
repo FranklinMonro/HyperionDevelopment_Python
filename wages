@@ -1,0 +1,16 @@
+
+# Determine if the user is a salesperson or a manager.
+employee = input("Are you a Salesperson or a Manager?").capitalize()
+if employee == "Salesperson":    
+# Then, depending on their answer, calculate the monthly wage for the employee.
+# If the user is a salesperson ask for their gross sales for the month.
+    sales = float(input("What was your sales for the month?"))
+    commission = sales *.08
+    salary = 2000.00 + commission
+    print("Your salary for the month is " + "R" + str(round(salary, 2)))
+# If the user is a manager ask for the number of hours worked for the month.
+else:
+    hours = float(input("How many hours did you work this month?"))
+    rate = hours * 40.00
+    print("Your salary for the month is " + "R" + str(round(rate, 2)))
+# Display the total monthly wage for the employee. 
