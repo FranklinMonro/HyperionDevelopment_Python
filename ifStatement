@@ -1,0 +1,6 @@
+# Ask the user to enter the year they were born and calculate if they are older than 18.
+year1 = int(input("What year are you born in?:"))
+age = 2018 - year1
+# If they are older then display a message saying “Congrats you are old enough”
+if (age >= 18):
+    print("Congrats you are old enoug")
