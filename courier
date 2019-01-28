@@ -1,0 +1,34 @@
+
+# You need to design a program for a courier company to calculate the cost of sending a parcel.
+# Ask the user to enter the price of the package they would like to purchase.
+
+packageSize = float(input("Please specify which package do you want(R10.00, R20.00 or R30.00)?").replace("R", ""))
+
+# Ask the user to enter the total distance of the delivery in km’s.
+distance = float(input("What is the delivery distance of package?"))
+
+# Now add on the delivery costs to get the final cost of the product.
+# There are four categories to factor in when determining a parcel’s final cost each with two options based on their delivery preferences. (Use an if else statement based on the choice they make)
+#       - Air R0.36 per Km or freight R0.25 per Km
+travel = input("How do you want to send your package Air at R0.36 p/km or Freight R0.25 p/km?:").capitalize()
+if travel == "Air":
+    shippingCost = 0.36
+else:
+    shippingCost = 0.25
+#       - Gift R15.00 or no gift R0.00
+gift = input("Do you want to gift wrap it R15.0?(Yes or No)").capitalize()
+if gift == "Yes":
+    giftCost = 15.00
+else:
+    giftCost = 0.00
+#       - Priority R100 or standard delivery R20
+priority = input("Do you want the package to delivered Priority R100 or Standard R20?(Yes or No)").capitalize()
+if priority == "Yes":
+    priorityCost = 100.00
+else:
+    priorityCost = 20.00
+
+# Work out the total cost of the package based on the selection in each category.
+distanceCost = distance * shippingCost
+total = packageSize + distanceCost + giftCost + priorityCost
+print("The cost to deliver your package will be: " + "R" + str(round(total,2)))
