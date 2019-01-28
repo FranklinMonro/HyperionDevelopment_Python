@@ -1,0 +1,12 @@
+#Input number 1 and store in variable "num1"
+num1 = int(input("What is your first number?:"))
+#Input number 2 and store in variable "num2"
+num2 = int(input("What is your second number?:"))
+#Print out num1 and num2
+print(str(num1) + " " + str(num2))
+#Swap numbers around
+temp = num1
+num1 = num2
+num2 = temp
+#Print swap num1 and num2
+print(str(num1) + " " + str(num2))
