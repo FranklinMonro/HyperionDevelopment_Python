@@ -1,0 +1,9 @@
+# Ask the user to enter the lengths of all three sides of a triangle
+side1 = float(input("What is the length of the first side of a triangle?:"))
+side2 = float(input("What is the length of the second side of a triangle?:"))
+side3 = float(input("What is the length of the third side of a triangle?:"))
+# Calculate the area of triangle.
+s = (side1 + side2+ side3) / 2
+area = (s*(s-side1)*(s-side2)*(s*side3))**0.5
+# Print out the area.
+print(area)
