@@ -1,0 +1,35 @@
+
+#import random module
+import random
+
+# Generate a random two digit number (between 10 and 99) this number will be the lottery number.
+lottoNum = random.randint(10, 99)
+
+# Ask the user to enter any two digit number this will be the user's guess.
+guess = int(input("Please insert a two digit number between 10 and 99:"))
+# Get first and second digit from the two digit lottery number.
+strLottoNum = str(lottoNum)
+strLottoNum1 = strLottoNum[0:1]
+strLottoNum2 = strLottoNum[1:2]
+revLottoNum= strLottoNum2 + strLottoNum1
+# Get the first and second digit from the user's guess.
+strGuess = str(guess)
+strGuessNum1 = strGuess[0:1]
+strGuessNum2 = strGuess[1:2]
+# Print out the generated lottery number.
+print(lottoNum)
+# If the user's guess matches the lottery number exactly, print out "Congratulations you have an exact match, you win R10 000.00"
+# (i.e. if the user enters 12 and the lottery number is 12)
+if lottoNum == guess:
+    print("Congratulations you have an exact match, you win R10 000.00")
+# If the user's guess matches the lottery numbers, but are in the wrong order print out "Congratulations you have all digits, you win R5 000.00"
+# (i.e. if the user enters 48 and the lottery number is 84)
+elif revLottoNum == guess:
+    print("Congratulations you have all digits, you win R5 000.00")
+# If the user guesses one digit correctly print out "Congratulations you have one correct digit, you win R1 000.00"
+# (i.e. if the user enters 27 and the lottery number is 78)
+elif strLottoNum1 == strGuessNum1 or strLottoNum2 == strGuessNum2 or strLottoNum1 == strGuessNum2 or strLottoNum2 == strGuessNum1:
+    print("Congratulations you have one correct digit, you win R1 000.00")
+# Else print out "Sorry no match"
+else:
+    print("Sorry no match")
