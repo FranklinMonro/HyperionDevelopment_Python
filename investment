@@ -1,0 +1,15 @@
+#import math module
+import math
+#Get input from user
+P = float(input("What is the amount that you want to invest?:"))
+s = float(input("What is the interest rate that you are investing in?:"))
+i = s/100#Divide interset with 100
+t = int(input("How many years are you investing?:"))
+interest = input("How do you want to invest Simple or Compound?:").capitalize()
+
+if interest == "Simple":#calculate if interest is simple
+        A=P*(1 + i * t)
+        print(A)
+else:
+    A=P* math.pow((1+i),t)#calculate if interterst is compund
+    print(A)
