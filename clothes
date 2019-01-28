@@ -1,0 +1,42 @@
+# This program will help the user decide what to wear
+# In order to determine what to wear, you need to determine whether the temperature is greater than 20 degrees,
+temp = False
+whatTemp = input("Is the temperature more than 20 degrees outside?(Yes or No)").capitalize()
+if whatTemp == "Yes":
+    temp = True
+# If the temperature is greater than 20 degrees then the user should wear a short sleeved shirt 
+# If the temperature is less than 20 degrees then the user should wear a long sleeved shirt
+
+
+# whether it is the weekend, and whether it is sunny.
+weekend = False
+isWeekend = input("Is it weekend?(Yes or No)").capitalize()
+if isWeekend == "Yes":
+    weekend = True
+# If it is the weekend the user should wear shorts 
+# If it is a weekday the user should wear jeans
+
+    
+sunny = False
+isSunny = input("Is it sunny outside?(Yes or No)").capitalize()
+if isSunny == "Yes":
+    sunny = True
+# if it is sunny the user should wear a cap
+# if it is not sunny the user should wear a raincoat
+
+
+
+
+# print out the  user's full outfit
+if temp == True:
+    print("You should wear a short sleeve shirt")
+else:
+    print("You should wear a long sleeve shirt")
+if weekend == True:
+    print("You should wear shorts")
+else:
+    print("You should wear jeans")
+if sunny == True:
+    print("You should wear a cap")
+else:
+    print("You should wear a raincoat")
