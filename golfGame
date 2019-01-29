@@ -1,0 +1,30 @@
+
+#get the par of the green from user
+par = int(input("What is the par of the green: "))
+#get the stroke the player played
+stroke = int(input("What was your stroke?: "))
+
+#if the player stroke is 1 it is a hole-in-one
+if stroke == 1:
+    print("WOW that is a HOLE-IN-ONE!")
+#if the player stroke is 1 below par it's a birdie
+elif stroke == par-1:
+    print("Well done that is a BIRDIE!")
+#if the player stroke is 2 below par it's a eagle
+elif stroke == par-2:
+    print("Good job that is a EAGLE!")
+#if the players stroke is 3 below par it's a albatros
+elif stroke == par-3:
+    print("Amazing stroke that is a ALBATROS!")
+#if the players stroke is the same as par it is par
+elif stroke == par:
+    print("At least you are PAR!")
+#if the players stroke is one above par it's a bogey
+elif stroke == par+1:
+    print("Oh no that is a BOGEY!")
+#if the players stroke is two above par it's a double bogey
+elif stroke == par+2:
+    print("OOPS that is a DOUBLE BOGEY!")
+#if the players stroke is three or more above par it's quit
+else:
+    print("I think you should hang up your clubs and go home!")
