@@ -1,0 +1,15 @@
+abbreviations = {#create a dictionary
+    'AAA': 'As An Academic',
+    'BTW': 'By The Way',
+    'CCI': 'Correct Coding Initiative',
+    'DOP': 'Data Object Processed',
+    'EDI': 'Electronic Data Interchange',
+    'FIR': 'First Information Report'
+    }
+for key, value in abbreviations.items():#for loop to get keys and values from dictionary
+    ask = input("What abbreviation do you want?: ").upper()#get user input
+    if ask == key:#if loop to compare input to key
+        print(value)
+    else:
+        print("Abbreviation not found")
+    break
