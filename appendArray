@@ -1,0 +1,10 @@
+
+incorrect_names = []#create array to store data in
+name = 0#create variable
+
+while name != "John":#while loop until name is John
+    name = input("What is your name?: ").capitalize()#input from user
+    if name != "John":#if loop while it hasnt reached John
+        incorrect_names.append(name)#append array
+
+print(incorrect_names)
