@@ -1,0 +1,9 @@
+
+#Get input from user
+numberList = int(input("Till what number do you want to check: "))
+#Create for loop to go through each number
+for i in range(2,numberList):
+    if(i%2==0):#check if number is not a prime number
+        print(str(i) + " is not a prime number")
+    else:
+        print(str(i) + " is a prime number")
