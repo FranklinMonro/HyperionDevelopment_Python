@@ -1,0 +1,20 @@
+
+friends_names = []#create array to store names
+friends_ages = []#create array to store ages
+counter = 0#variable for counter
+names = 0#variable for names
+ages = 0#variable for ages
+while counter != 3 :#while loop to stop at 3
+    names = input("What is your name?: ").capitalize()#input from user
+    ages = input("What is your age?: ")#input from user    
+    if counter != 3:#if counter havent reached 3
+        friends_names.append(names)#append array with input
+        friends_ages.append(ages)#append array with input
+        counter = counter +1#counter +1
+for friend in friends_names:#for loop to go through array
+    friend_first = friends_names[0]#get index 0
+    friend_last = friends_names[-1]#get last index
+    len_friend_list = len(friends_names)#lenght of array
+print(friend_first)
+print(friend_last)
+print(len_friend_list)
