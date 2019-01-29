@@ -1,0 +1,23 @@
+
+import random#import the random module
+
+number1 = 0#create variable to store number in
+number2 = 0#create variable to store number in
+count = 0#create variable to store a count in
+count2 = 0#create variable to store a count in
+
+for x in range(10):#create a range between 0 and 10
+    number1 = random.randint(0,10)#create random number which is bigger than 0
+    number2 = random.randint(0,10)#create random number which is bigger than 0
+    while count != 5:#game play until count reach 5
+        count = count + 1#count how many games are played
+    if number1 > number2: #if statement to make sure that the first number is bigger than second number
+        print(str(number1) + "-" + str(number2))#ask question
+        answer = int(input("What is the answer: "))#input from user
+        if number1 - number2 == answer:#check if input from user is correct
+            print("You are correct!")
+            count2 = count2 + 1#count how many time user is correct
+        else:
+            print("You are wrong!" + "The correct answer is "+ str(number1-number2) )
+
+print("\n" + "You got "+ str(count2) +" correct" + "out off " + str(count))
