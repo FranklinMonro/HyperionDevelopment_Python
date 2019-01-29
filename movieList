@@ -1,0 +1,10 @@
+
+movie_list = []#create array
+num = 0#create number variable
+while num != 5:#while loop to stop when reach 5
+    movieAsk = input("Name your top 5 movies: ")#user input
+    if num != 5:#if loop while number havent reached 5
+        movie_list.append(movieAsk)#appen array with input
+        num = num + 1#number +1
+for num, movie in enumerate(movie_list):#enumerate for loop to get number and movie
+    print("Movie " +str(num+1) + " : "+ movie)
