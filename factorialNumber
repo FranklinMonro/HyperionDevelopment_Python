@@ -1,0 +1,8 @@
+num = int(input("Please insert a number to be factorial: "))
+fact = 1
+
+if num > 0:
+    for i in range(1,num):
+        fact = fact*(i+1)
+
+print(fact)
