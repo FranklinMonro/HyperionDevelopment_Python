@@ -1,0 +1,5 @@
+
+#create for loop for range
+for num in range(0,1001):
+    if num%2==0:#check all even numbers
+        print(num)
