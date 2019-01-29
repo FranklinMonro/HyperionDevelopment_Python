@@ -1,0 +1,21 @@
+askNum1 = " "#create a string to ask numbers
+
+aryNum1 = []#create list to store first numbers in
+aryNum2 = []#create list to store second numbers in
+
+while askNum1 != -1:#create while loop to insert numbers into list
+    askNum1 = int(input("Input numbers for first array(-1 to stop: "))#input from user
+    aryNum1.append(askNum1)#append the list with number from user
+    
+askNum2 = ""
+while askNum2 != -1:#create while loop to insert numbers into list
+    askNum2 = int(input("Input numbers for second array(-1 to stop: "))#input from user
+    aryNum2.append(askNum2)#append the list with number from user
+
+if aryNum1[:-1] == aryNum2[:-1]:#if statement to compare the two list
+    print("The array is the same")
+else:
+    print("The array is not the same")
+
+print(aryNum1)
+print(aryNum2)
