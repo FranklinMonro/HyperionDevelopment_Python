@@ -1,0 +1,12 @@
+
+countryMap = {#create a dictionary
+    'Unitedkingdom': 'London',
+    'Southafrica': 'Pretoria',
+    'Sweden': 'Stockholm',
+    'Canada': 'Ottawa'
+    }
+for key, value in countryMap.items():#for loop to get key and value of dictionary
+    print(key)
+
+ask = input("Pick country to check captial city:").capitalize()#user input
+print("The captial of "+ ask + " is: " +countryMap[ask])#print out capital
