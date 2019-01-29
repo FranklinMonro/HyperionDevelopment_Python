@@ -1,0 +1,9 @@
+ofile = open('regForm.txt', 'w')#create a txt file to write to
+num = int(input("How many students are there in the class?: "))#get user input
+counter = 0#create a variable to store count in
+while counter != num:#create a while loop to stop when amount of students are reached
+    studentID = input("What is your student ID?: ")#get user input
+    counter = counter + 1#counter
+    ofile.write(studentID + "\n")#write input to txt file
+
+ofile.close()#close file
