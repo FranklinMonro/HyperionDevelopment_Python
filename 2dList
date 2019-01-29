@@ -1,0 +1,19 @@
+row = int(input("Enter number of row: "))#input from user
+column = int(input("Enter number of columns: "))#input from user
+
+list1 = []#create a empty list
+
+for i in range(0,row):#create a range for list
+    list1.append([])#append list
+    
+for i in range(0,row):#create range for "row"
+    for j in range(0,column):#create range for "column"
+        list1[i].append(j)#append the list to amount of "row" and "columns"
+        list1[i][j] = 0#set the values in the list of "row" and "columns" to zero
+
+for i in range(0,row):
+    for j in range(0,column):
+        print("Entry in row: ",i+1,"column: ",j+1)#ask for input
+        list1[i][j] = int(input())#append the input into each "row" and "column"
+        
+print(list1)
