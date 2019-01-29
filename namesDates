@@ -1,0 +1,27 @@
+
+#open text file
+f = open('DOB.txt', 'r')
+s = 0
+r = 0
+print("Name\n")#print out name
+for name in f:#create a for loop to use for names
+    s += 1
+    
+    makeName=name.split()#split into a array
+    print(makeName)
+    nameSplice = makeName[0:2]#splice name from index 0 to 1
+    print(nameSplice)
+    joinName = ' '.join(nameSplice)#join names together
+    print(str(s) + ". " +joinName)#print out names
+    
+f = open('DOB.txt', 'r')#open text file
+print("\nDate\n")#print out date
+for date in f:#create for loop for dates
+    r += 1
+    makeDate=date.split()#split up into a array
+    dateSplice = makeDate[2:5]#splice text from index 2 to 4
+    joinDate = ' ' .join(dateSplice)#join dates together
+    print(str(r) + ". " + joinDate)#print out dates
+    
+
+f.close()#close file
