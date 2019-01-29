@@ -1,0 +1,4 @@
+#user input
+word = input("Please insert a sentence: ")
+word2 = word.split()#spit word
+print("\n".join(word2))#print beneath each other
