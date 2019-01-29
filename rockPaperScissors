@@ -1,0 +1,25 @@
+
+import random
+print("Choose one of the follow: \n" + "0 = Rock \n" + "1 = Scissors \n" + "2 = Paper \n")
+
+random = random.randint(0,2)
+
+print(random)
+
+choice = int(input("Insert your choice:"))
+
+
+if choice == 0 and random == 1:
+    print("You Win!")
+elif choice == 0 and random == 2:
+    print("You Lose!")
+elif choice == 1 and random == 0:
+     print("You Lose!")
+elif choice == 1 and random == 2:
+    print("You Win!")
+elif choice == 2 and random == 0:
+    print("You Win!")
+elif choice == 2 and random == 1:
+     print("You Lose!")
+else:
+    print("It's a draw")
