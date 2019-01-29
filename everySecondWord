@@ -1,0 +1,11 @@
+def everyOtherWord(sentence):#function to replace every second word
+    
+    sentSplit = sentence.split(' ')#split sentence at space
+    for num, word in enumerate(sentSplit):#enumerate throuht sentence
+        if num%2==0:#if statement to get every second word
+            sentSplit[num] = "Hallo"#word to replace with
+    newSent = " ".join(sentSplit)#join sentence again
+    print(newSent)
+
+sentence = input("Please insert a sentence: ")
+everyOtherWord(sentence)#call function
