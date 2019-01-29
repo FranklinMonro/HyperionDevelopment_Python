@@ -1,0 +1,13 @@
+
+def noDups():#create a function
+    arrayBef = []#create a list to store numbers in
+    getNum = ""#create string
+    
+    while getNum != -1:#while loop
+        getNum = int(input("Give numbers(-1 exit): "))#get user input
+        arrayBef.append(getNum)#append list with user input
+    print(arrayBef)#print out list before
+    arraySpl = arrayBef[:-1]#remove the last input
+    arrayAft = list(set(arraySpl))#remove all duplicates of list
+    print(arrayAft)
+noDups()#call the function
