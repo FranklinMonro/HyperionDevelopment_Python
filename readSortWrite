@@ -1,0 +1,26 @@
+g = open('numberEven.txt', 'r+')#open txt file
+h = open('numberOdd.txt', 'r+')#open txt file
+listOfNumbers = []#Create a array to store data in
+for line in g:#for loop for first file
+    numberEven = line[:2]#split from index 0 to 1
+    thisNumberEven = int(numberEven)#cast from string to integer
+    listOfNumbers.append(thisNumberEven)#store all numbers into array
+
+for line in h:#for loop for second file
+    numberOdd = line[:2]#split from index 0 to 1
+    thisNumberOdd = int(numberOdd)#cast from string to integer
+    listOfNumbers.append(thisNumberOdd)#store all numbers into array
+
+
+    
+compileListOfNumbers = sorted(listOfNumbers)#sort numbers from biggest to smalles
+
+
+
+
+ofile= open('optional_task.txt', 'w')#create a txt file to write to
+ofile.write(str(compileListOfNumbers))#write array to file
+
+g.close()#close file
+h.close()#close file
+ofile.close()#close file
