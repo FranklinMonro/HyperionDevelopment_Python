@@ -1,0 +1,26 @@
+
+ask = ""#create variable to stor number iin
+num = 0
+posNumber =[]#create list for all positive numbers
+negNumber = []#create list for all negative numbers
+allNumber = []#create list for all the numbers
+count = 0#create a variable for count 
+
+
+while ask !="0":
+    ask = input("Insert a number(a exit question):")#input numbers
+    num = int(ask)
+    allNumber.append(num)
+    count = count + 1
+    if num > 0: #if number is bigger than 0
+        posNumber.append(num)#store numbers in a array
+    else:#if number is smaller than 0
+        negNumber.append(num)
+      
+
+print(posNumber)#print out all positive numbers
+print(negNumber[:-1])#print out all negative numbers
+print(len(posNumber))#print out number of positive numbers
+print(len(negNumber[:-1]))#print out number of positive numbers  
+print(sum(allNumber[:-1]))
+print(sum(allNumber[:-1])/count)#print out the average
