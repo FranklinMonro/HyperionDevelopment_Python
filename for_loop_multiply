@@ -1,0 +1,6 @@
+#get input from user
+num = int(input("Enter a number: "))
+time = int(input("Till what number do you want to multiply with: ?"))
+
+for i in range (1 , time+1):#create range for number to be multiply with
+          print(str(num) + "x" + str(i) + "=" + str(i * num))#print out answers
