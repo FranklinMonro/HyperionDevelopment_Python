@@ -1,0 +1,14 @@
+import random#import of random module
+arr1 = []#create a empty list
+
+for i in range(100):#create 100 spots in list
+    arr1.append(random.randrange(1,1001))#append list with numbers range between 1 and a 1000
+
+print(arr1)#print out the list
+
+#for i in range(len(arr1)): (if i want to make it go on and ont
+ask = int(input("What index do you want to know: "))#user input
+if ask > len(arr1):#compare input index against length of list
+    print("No such index")#if the index is out of bound
+else:
+    print(arr1[ask])#print out the index number
