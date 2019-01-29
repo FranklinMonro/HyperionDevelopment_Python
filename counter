@@ -1,0 +1,21 @@
+
+f = open('input.txt', 'r')#open text file
+
+numLines = 0#create variable to store data
+numWords = 0#create variable to store data
+numChars = 0#create variable to store data
+vowels = 'aeiou'#identify what vowels is
+vow = 0#create variable to store data
+for line in f:#for loop to loop through txt file
+    wordsList = line.split()#split into arrays
+    numLines += 1 #count the lines
+    numWords += 1 #count the words
+    vow += 1#count the vowels
+    numWords += len(wordsList)#store data in variable
+    numChars += len(line)#store data in variable
+    vow += len(vowels)#store data in variable
+    
+#print out answer    
+print("This is the number of lines: " + str(numLines) + "\n" + "This is the number of words: " + str(numWords)+ "\n" + "This is the number of Characters: " + str(numChars) + "\n" +"This is the number of vowels: " + str(vow))
+
+f.close()#close file
