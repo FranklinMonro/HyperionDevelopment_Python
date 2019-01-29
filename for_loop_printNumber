@@ -1,0 +1,9 @@
+
+# Get user input a number and cast it to an int. Store it in a variable called num.
+num = int(input("Please insert a number highter than 10:"))
+# Now, if the number is bigger than 10, use a for loop to output it as many times as its value.
+for i in range(0, num):
+    if num > 10:
+        print(num)
+else: 
+        print("Sorry, too small")
