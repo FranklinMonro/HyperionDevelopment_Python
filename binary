@@ -1,0 +1,8 @@
+
+ask = input('Enter a binary number : ')#user input
+strNum = [int(i) for  i in ask]#loop through to cast from string to integer
+binList = []#create a array
+for i in range(len(strNum)):#for loop to create a range
+    binList.append(strNum[i]*(2**i))#append to array
+    decTot = sum(binList)#sum up the array      
+print('Decimal Number is : ' + str(decTot))
