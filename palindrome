@@ -1,0 +1,8 @@
+#get user input
+word = input("Please enter a word: ")
+word2 = word[::-1]#reverse word
+
+if word == word2:#if statement to compare word with reverse word
+    print("This word is a palindrome")
+else:
+    print("This word is not a palindrome")
