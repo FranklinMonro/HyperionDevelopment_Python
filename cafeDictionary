@@ -1,0 +1,18 @@
+
+menu = ["Steak", "Bacon", "Mushrooms","Sprite"]#create a array
+stock = {#create a dictionary
+    "Steak":5,
+    "Bacon":10,
+    "Mushrooms":7,
+    "Sprite":15
+    }
+price = {#crate a dictionary
+    "Steak":15,
+    "Bacon":7,
+    "Mushrooms":3,
+    "Sprite":13
+    }
+print("The stock worth in the store is : \n ")
+for key in price and stock:#for loop to get key in dictionary
+    total = price[key] * stock[key]#multiply keys from different dictionary
+    print(key + " " + str(total))
